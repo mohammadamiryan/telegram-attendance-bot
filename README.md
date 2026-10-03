@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33009828/README.md)
 # Telegram Attendance Bot 🤖
 
 A simple Telegram attendance bot built with Python for recording and managing attendance.
