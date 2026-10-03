@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Local database / exports
+attendance.db
+*.xlsx
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
