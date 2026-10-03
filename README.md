@@ -1,8 +1,9 @@
+[README.md](https://github.com/user-attachments/files/33009828/README.md)
 # Telegram Attendance Bot 🤖
 
-A simple Telegram attendance bot built with Python.
+A simple Telegram attendance bot built with Python for recording and managing attendance.
 
-It records check-in/check-out sessions, prevents duplicate open sessions, supports Jalali dates, generates daily/monthly reports, and exports attendance data to Excel.
+It supports check-in/check-out sessions, Jalali dates, daily and monthly reports, Excel export, SQLite storage, and basic admin functionality.
 
 ## Features
 
@@ -36,6 +37,7 @@ telegram-attendance-bot/
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
@@ -44,20 +46,20 @@ telegram-attendance-bot/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/telegram-attendance-bot.git
+git clone https://github.com/mohammadamiryan/telegram-attendance-bot.git
 cd telegram-attendance-bot
 ```
 
 ### 2. Create a virtual environment
 
-Windows:
+#### Windows
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-macOS/Linux:
+#### macOS / Linux
 
 ```bash
 python3 -m venv .venv
@@ -79,9 +81,9 @@ BOT_TOKEN=your_real_bot_token
 ADMIN_IDS=123456789
 ```
 
-> Never commit your real `.env` file or bot token.
+> Never commit your real `.env` file, Telegram bot token, passwords, or private credentials.
 
-### 5. Run
+### 5. Run the bot
 
 ```bash
 python bot.py
@@ -90,22 +92,34 @@ python bot.py
 ## Telegram Commands
 
 - `/start` — show the main menu
-- `/admin_export` — export the current Jalali month for all users (admin only)
+- `/admin_export` — export attendance data for the current Jalali month for all users (admin only)
 
 ## Security
 
-Secrets are loaded from environment variables. The local SQLite database and generated Excel files are excluded from Git by `.gitignore`.
+- Secrets are loaded from environment variables.
+- `.env` is excluded from version control.
+- The local SQLite database is excluded from version control.
+- Generated Excel files are excluded from version control.
 
 ## Roadmap
 
+Planned improvements include:
+
 - Manual date editing
-- Monthly attendance summary by hours
+- Better monthly attendance summaries
 - Admin user management
-- Better Excel formatting
+- Improved Excel formatting
+- Automated tests
 - Docker deployment
 - PostgreSQL support
-- Automated tests
+- More advanced reporting
+
+## About This Project
+
+This project was built as a practical Python project focused on automation, data storage, reporting, and Telegram bot development.
+
+It is part of my ongoing journey in Python, software development, and data-driven healthcare technology.
 
 ## License
 
-MIT
+This project is licensed under the MIT License.
